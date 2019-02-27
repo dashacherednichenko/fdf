@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/dpiven/CLionProjects/fdf/main.c
+/Users/dpiven/CLionProjects/fdf/./libft/libft.h
+fcntl.h
+-
+string.h
+-
+unistd.h
+-
+stdlib.h
+-
 stdio.h
 -
+stdarg.h
+-
+
+/Users/dpiven/CLionProjects/fdf/main.c
+./libft/libft.h
+/Users/dpiven/CLionProjects/fdf/./libft/libft.h
 

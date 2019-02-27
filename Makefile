@@ -12,7 +12,7 @@
 
 NAME = fdf
 
-SRC = main.c
+SRC = main.c fdf.c
 
 LIB = @make -C libft/
 

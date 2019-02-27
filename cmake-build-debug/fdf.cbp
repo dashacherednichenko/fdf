@@ -80,6 +80,261 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_atoi.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_binar.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_bzero.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_declima.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_flags.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_float.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_isalnum.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_isalpha.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_isascii.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_isdigit.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_isprint.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_itoa.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_itoa_base.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_itoa_baseld.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_list_last.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_list_size.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstadd.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstaddend.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstdel.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstdelone.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstiter.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstmap.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstnew.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_lstsplit.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memalloc.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memccpy.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memchr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memcmp.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memcpy.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memdel.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memmove.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_memset.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_obnul_flags.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_octal.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_pars.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_percent.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_printf.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_ptr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putchar.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putchar_fd.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putcharn.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putendl.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putendl_fd.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putnbr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putnbr_fd.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putnbrf.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putnbrll.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putnbrlln.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putstr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putstr_fd.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_putstrn.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_retnbr_float.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_sqrt.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strcat.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strchr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strclr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strcmp.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strcpy.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strdel.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strdup.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strequ.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_striter.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_striteri.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strjoin.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strjoinfree.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strlcat.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strlen.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strlowcase.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strmap.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strmapi.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strncat.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strncmp.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strncpy.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strnequ.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strnew.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strnstr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strrchr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strsplit.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strstr.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strsub.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_strtrim.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_tolower.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_toupper.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_uitoa_base.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/get_next_line.c">
+			<Option target="fdf"/>
+		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/main.c">
 			<Option target="fdf"/>
 		</Unit>
