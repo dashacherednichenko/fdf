@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/fdf.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/fdf.h">
+			<Option target="fdf"/>
+		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_atoi.c">
 			<Option target="fdf"/>
 		</Unit>

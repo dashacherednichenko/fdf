@@ -14,6 +14,7 @@
 # define FDF_H
 
 #include "./libft/libft.h"
+#include "./minilibx_macos/mlx.h"
 
 int ft_fdf(char *s);
 

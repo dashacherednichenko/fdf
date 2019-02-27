@@ -123,6 +123,33 @@ fdf/fast:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/build
 .PHONY : fdf/fast
 
+fdf.o: fdf.c.o
+
+.PHONY : fdf.o
+
+# target to build an object file
+fdf.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/fdf.c.o
+.PHONY : fdf.c.o
+
+fdf.i: fdf.c.i
+
+.PHONY : fdf.i
+
+# target to preprocess a source file
+fdf.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/fdf.c.i
+.PHONY : fdf.c.i
+
+fdf.s: fdf.c.s
+
+.PHONY : fdf.s
+
+# target to generate assembly for a file
+fdf.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/fdf.c.s
+.PHONY : fdf.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -2454,6 +2481,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fdf"
+	@echo "... fdf.o"
+	@echo "... fdf.i"
+	@echo "... fdf.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
