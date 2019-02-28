@@ -1162,9 +1162,113 @@ CMakeFiles/fdf.dir/libft/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/libft/get_next_line.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/libft/get_next_line.c -o CMakeFiles/fdf.dir/libft/get_next_line.c.s
 
+CMakeFiles/fdf.dir/minilibx_macos/font.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/font.c.o: ../minilibx_macos/font.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/fdf.dir/minilibx_macos/font.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/font.c.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/font.c
+
+CMakeFiles/fdf.dir/minilibx_macos/font.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/font.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/font.c > CMakeFiles/fdf.dir/minilibx_macos/font.c.i
+
+CMakeFiles/fdf.dir/minilibx_macos/font.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/font.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/font.c -o CMakeFiles/fdf.dir/minilibx_macos/font.c.s
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.o: ../minilibx_macos/mlx_init_loop.m
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_init_loop.m
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_init_loop.m > CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.i
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_init_loop.m -o CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.s
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.o: ../minilibx_macos/mlx_int_str_to_wordtab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_int_str_to_wordtab.c
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_int_str_to_wordtab.c > CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.i
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_int_str_to_wordtab.c -o CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.s
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.o: ../minilibx_macos/mlx_new_image.m
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_new_image.m
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_new_image.m > CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.i
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_new_image.m -o CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.s
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.o: ../minilibx_macos/mlx_new_window.m
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_new_window.m
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_new_window.m > CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.i
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_new_window.m -o CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.s
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.o: ../minilibx_macos/mlx_rgb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_rgb.c
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_rgb.c > CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.i
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_rgb.c -o CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.s
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.o: ../minilibx_macos/mlx_shaders.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_shaders.c
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_shaders.c > CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.i
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_shaders.c -o CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.s
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.o: ../minilibx_macos/mlx_xpm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.o   -c /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_xpm.c
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_xpm.c > CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.i
+
+CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_xpm.c -o CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.s
+
 CMakeFiles/fdf.dir/main.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/fdf.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/fdf.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/main.c.o   -c /Users/dpiven/CLionProjects/fdf/main.c
 
 CMakeFiles/fdf.dir/main.c.i: cmake_force
@@ -1177,7 +1281,7 @@ CMakeFiles/fdf.dir/main.c.s: cmake_force
 
 CMakeFiles/fdf.dir/fdf.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/fdf.c.o: ../fdf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/fdf.dir/fdf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/fdf.dir/fdf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/fdf.c.o   -c /Users/dpiven/CLionProjects/fdf/fdf.c
 
 CMakeFiles/fdf.dir/fdf.c.i: cmake_force
@@ -1187,6 +1291,19 @@ CMakeFiles/fdf.dir/fdf.c.i: cmake_force
 CMakeFiles/fdf.dir/fdf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/fdf.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/fdf.c -o CMakeFiles/fdf.dir/fdf.c.s
+
+CMakeFiles/fdf.dir/ft_count.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/ft_count.c.o: ../ft_count.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/fdf.dir/ft_count.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/ft_count.c.o   -c /Users/dpiven/CLionProjects/fdf/ft_count.c
+
+CMakeFiles/fdf.dir/ft_count.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/ft_count.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/ft_count.c > CMakeFiles/fdf.dir/ft_count.c.i
+
+CMakeFiles/fdf.dir/ft_count.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/ft_count.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/ft_count.c -o CMakeFiles/fdf.dir/ft_count.c.s
 
 # Object files for target fdf
 fdf_OBJECTS = \
@@ -1275,8 +1392,17 @@ fdf_OBJECTS = \
 "CMakeFiles/fdf.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/fdf.dir/libft/ft_uitoa_base.c.o" \
 "CMakeFiles/fdf.dir/libft/get_next_line.c.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/font.c.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.o" \
+"CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.o" \
 "CMakeFiles/fdf.dir/main.c.o" \
-"CMakeFiles/fdf.dir/fdf.c.o"
+"CMakeFiles/fdf.dir/fdf.c.o" \
+"CMakeFiles/fdf.dir/ft_count.c.o"
 
 # External object files for target fdf
 fdf_EXTERNAL_OBJECTS =
@@ -1366,11 +1492,20 @@ fdf: CMakeFiles/fdf.dir/libft/ft_tolower.c.o
 fdf: CMakeFiles/fdf.dir/libft/ft_toupper.c.o
 fdf: CMakeFiles/fdf.dir/libft/ft_uitoa_base.c.o
 fdf: CMakeFiles/fdf.dir/libft/get_next_line.c.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/font.c.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/mlx_new_image.m.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/mlx_new_window.m.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/mlx_rgb.c.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/mlx_shaders.c.o
+fdf: CMakeFiles/fdf.dir/minilibx_macos/mlx_xpm.c.o
 fdf: CMakeFiles/fdf.dir/main.c.o
 fdf: CMakeFiles/fdf.dir/fdf.c.o
+fdf: CMakeFiles/fdf.dir/ft_count.c.o
 fdf: CMakeFiles/fdf.dir/build.make
 fdf: CMakeFiles/fdf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking C executable fdf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Linking C executable fdf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

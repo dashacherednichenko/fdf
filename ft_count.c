@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fdf.h                                              :+:      :+:    :+:   */
+/*   ft_count.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpiven <dpiven@student.unit.ua>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/27 16:34:26 by dpiven            #+#    #+#             */
-/*   Updated: 2019/02/27 16:34:28 by dpiven           ###   ########.fr       */
+/*   Created: 2019/02/28 15:44:29 by dpiven            #+#    #+#             */
+/*   Updated: 2019/02/28 15:44:30 by dpiven           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FDF_H
-# define FDF_H
+#include "fdf.h"
 
-#include "./libft/libft.h"
-#include "mlx.h"
-
-typedef struct		s_fdf
+int ft_count_words(char const *s, char c)
 {
-	int				w;
-	int				h;
-	int				**map;
-}					t_fdf;
+	int		i;
+	int		x;
 
-int					ft_fdf(char *s, t_fdf *fdf);
-int 				ft_validmap(char **line, int i, t_fdf *fdf);
-int					ft_count_words(char const *s, char c);
-
-#endif
+	i = 0;
+	x = 0;
+	while (s[i] != '\0')
+	{
+		while (s[i] == c && s[i])
+			i++;
+		if (s[i] != c && s[i])
+		{
+			while (s[i] != c && s[i])
+				i++;
+			x++;
+		}
+	}
+	return (x);
+}
