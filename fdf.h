@@ -13,8 +13,8 @@
 #ifndef FDF_H
 # define FDF_H
 
-#include "./libft/libft.h"
-#include "mlx.h"
+# include "./libft/libft.h"
+# include "mlx.h"
 
 typedef struct		s_fdf
 {
@@ -23,9 +23,11 @@ typedef struct		s_fdf
 	int				**map;
 }					t_fdf;
 
-int					ft_fdf(char *s, t_fdf *fdf);
-int 				ft_validmap(char **line, int i, t_fdf *fdf);
+int					ft_fdf(char *s, t_fdf *fdf, int i);
+int					ft_validmap(char **line, int i, t_fdf *fdf);
 int					ft_count_words(char const *s, char c);
-int					**ft_malloc_mtrx(t_fdf *fdf);
+t_fdf				*ft_malloc_mtrx(t_fdf *fdf);
+t_fdf				*ft_create_mtrx(t_fdf *fdf, char *s);
+int					*ft_toint(char *s, t_fdf *fdf, int x);
 
 #endif

@@ -38,7 +38,7 @@ int	main(int argc, char **argv)
 //		mlx_pixel_put(mlx_ptr, win_ptr, 300, 300, 0xFFFFFF);
 //		mlx_key_hook(win_ptr, deal_key, (void *)0);
 //		mlx_loop(mlx_ptr);
-		if (ft_fdf(argv[1], fdf) == 0)
+		if (ft_fdf(argv[1], fdf, 0) == 0)
 		{
 			system("leaks -q fdf");
 			return 0;
