@@ -53,37 +53,37 @@ void			paint_map(t_fdf *fdf)
 	paint_line(fdf, dx, dy);
 }
 
-static	void	h_line(t_fdf *fdf, int x, int y, int i)
+static	void	h_v_line(t_fdf *fdf, int x, int y, int i)
 {
 	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);// - \
-		(i * fdf->cord.angle) + (i * fdf->cord.angle_y);
-	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step);// - fdf->map[i][j];// \
-		* fdf->cord.po_z - (j * fdf->cord.angle_z) - (j * fdf->p.angle_y);
-//		i == 0 ? y
-	fdf->cord.x1 = fdf->cord.x_s + ((y + 1) * fdf->cord.step);// - \
-		(i * fdf->cord.angle) + (i * fdf->p.angle_y);
+		(x * fdf->cord.angle) + (x * fdf->cord.angle_y);
+	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step);// - fdf->map[x][y];// \
+		* fdf->cord.po_z - (y * fdf->cord.angle_z) - (y * fdf->p.angle_y);
+		i == 1 ? y++ : x++;
+	fdf->cord.x1 = fdf->cord.x_s + (y * fdf->cord.step);// - \
+		(x * fdf->cord.angle) + (x * fdf->p.angle_y);
 	fdf->cord.y1 = fdf->cord.y_s + (x * fdf->cord.step);// - \
-		fdf->map[i][j + 1] * fdf->cord.po_z - ((j + 1) \
-		* fdf->cord.angle_z) - ((j + 1) * fdf->cord.angle_y);
-//	two_colors(fdf, i, j, fdf->map.values[i][j]);
+		fdf->map[x][y + 1] * fdf->cord.po_z - ((y + 1) \
+		* fdf->cord.angle_z) - ((y + 1) * fdf->cord.angle_y);
+//	two_colors(fdf, x, y, fdf->map.values[x][y]);
 	paint_map(fdf);
 }
 
-static	void	v_line(t_fdf *fdf, int x, int y)
-{
-	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);// - \
-		(i * fdf->cord.angle) + (i * fdf->cord.angle_y);
-	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step);// - \
-		fdf->map[i][j] * fdf->cord.po_z - ((j) * \
-		fdf->cord.angle_z) - (j * fdf->cord.angle_y);
-	fdf->cord.x1 = fdf->cord.x_s + (y * fdf->cord.step);// - ((i + 1) * \
-		fdf->p.angle) + ((i + 1) * fdf->cord.angle_y);
-	fdf->cord.y1 = fdf->cord.y_s + ((x + 1) * fdf->cord.step);// - \
-		fdf->map[i + 1][j] * fdf->cord.po_z - \
-		(j * fdf->cord.angle_z) - (j * fdf->cord.angle_y);
-//	two_colors(fdf, i, j, fdf->map.values[i][j]);
-	paint_map(fdf);
-}
+//static	void	v_line(t_fdf *fdf, int x, int y)
+//{
+//	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);// - \
+//		(i * fdf->cord.angle) + (i * fdf->cord.angle_y);
+//	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step);// - \
+//		fdf->map[i][j] * fdf->cord.po_z - ((j) * \
+//		fdf->cord.angle_z) - (j * fdf->cord.angle_y);
+//	fdf->cord.x1 = fdf->cord.x_s + (y * fdf->cord.step);// - ((i + 1) * \
+//		fdf->p.angle) + ((i + 1) * fdf->cord.angle_y);
+//	fdf->cord.y1 = fdf->cord.y_s + ((x + 1) * fdf->cord.step);// - \
+//		fdf->map[i + 1][j] * fdf->cord.po_z - \
+//		(j * fdf->cord.angle_z) - (j * fdf->cord.angle_y);
+////	two_colors(fdf, i, j, fdf->map.values[i][j]);
+//	paint_map(fdf);
+//}
 
 
 void		initial_values(t_fdf *fdf)
@@ -108,9 +108,9 @@ int	ft_paint_fdf(t_fdf *fdf)
 		while (y <= fdf->w)
 		{
 			if (y < fdf->w)
-				h_line(fdf, x, y, 1);
+				h_v_line(fdf, x, y, 1);
 			if (x < fdf->h)
-				v_line(fdf, x, y, 0);
+				h_v_line(fdf, x, y, 0);
 			y++;
 		}
 		x++;
