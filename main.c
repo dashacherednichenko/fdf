@@ -21,28 +21,25 @@ int	deal_key(int key, void *param)
 
 int	main(int argc, char **argv)
 {
-	void	*mlx_ptr;
-	void	*win_ptr;
-//	char	*line;
 	t_fdf	*fdf;
 
-//	line = NULL;
 	fdf = (t_fdf*)malloc(sizeof(t_fdf));
 	if (argc != 2)
 		ft_color_printf("C_REDUsage : ./fdf <filename> [ case_size z_size ]\nC_of");
 	else
 	{
-//		mlx_ptr = mlx_init();
-//		win_ptr = mlx_new_window(mlx_ptr, 2000, 1200, "fdf");
-//		mlx_pixel_put(mlx_ptr, win_ptr, 300, 250, 0xFFFFFF);
-//		mlx_pixel_put(mlx_ptr, win_ptr, 300, 300, 0xFFFFFF);
-//		mlx_key_hook(win_ptr, deal_key, (void *)0);
-//		mlx_loop(mlx_ptr);
 		if (ft_fdf(argv[1], fdf, 0) == 0)
 		{
 			system("leaks -q fdf");
 			return 0;
 		}
+		fdf->init = mlx_init();
+		fdf->win = mlx_new_window(fdf->init, 2000, 1200, "fdf");
+		ft_paint_fdf(fdf);
+//		mlx_pixel_put(fdf->init, fdf->win, 300, 250, 0xFFFFFF);
+//		mlx_pixel_put(fdf->init, fdf->win, 300, 300, 0xFFFFFF);
+//		mlx_key_hook(fdf->win, deal_key, (void *)0);
+		mlx_loop(fdf->init);
 	}
 	system("leaks -q fdf");
 	return 0;

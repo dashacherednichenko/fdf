@@ -177,6 +177,33 @@ ft_count.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_count.c.s
 .PHONY : ft_count.c.s
 
+ft_paint.o: ft_paint.c.o
+
+.PHONY : ft_paint.o
+
+# target to build an object file
+ft_paint.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_paint.c.o
+.PHONY : ft_paint.c.o
+
+ft_paint.i: ft_paint.c.i
+
+.PHONY : ft_paint.i
+
+# target to preprocess a source file
+ft_paint.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_paint.c.i
+.PHONY : ft_paint.c.i
+
+ft_paint.s: ft_paint.c.s
+
+.PHONY : ft_paint.s
+
+# target to generate assembly for a file
+ft_paint.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_paint.c.s
+.PHONY : ft_paint.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -2730,6 +2757,9 @@ help:
 	@echo "... ft_count.o"
 	@echo "... ft_count.i"
 	@echo "... ft_count.s"
+	@echo "... ft_paint.o"
+	@echo "... ft_paint.i"
+	@echo "... ft_paint.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

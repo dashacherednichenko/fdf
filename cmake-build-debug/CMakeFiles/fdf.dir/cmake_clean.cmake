@@ -95,6 +95,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fdf.dir/main.c.o"
   "CMakeFiles/fdf.dir/fdf.c.o"
   "CMakeFiles/fdf.dir/ft_count.c.o"
+  "CMakeFiles/fdf.dir/ft_paint.c.o"
   "fdf.pdb"
   "fdf"
 )

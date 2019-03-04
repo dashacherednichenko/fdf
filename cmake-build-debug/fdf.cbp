@@ -89,6 +89,9 @@
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/ft_count.c">
 			<Option target="fdf"/>
 		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/ft_paint.c">
+			<Option target="fdf"/>
+		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_atoi.c">
 			<Option target="fdf"/>
 		</Unit>

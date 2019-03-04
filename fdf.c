@@ -156,6 +156,7 @@ int	ft_fdf(char *s, t_fdf *fdf, int i)
 	{
 		if (ft_validmap(&l, i++, fdf) == 0)
 		{
+			free(l);
 			ft_color_printf("C_REDERROR in map C_GRN%s\nC_of", s);
 			return (0);
 		}

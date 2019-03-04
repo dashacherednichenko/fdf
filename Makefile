@@ -12,7 +12,7 @@
 
 NAME = fdf
 
-SRC = main.c fdf.c ft_count.c
+SRC = main.c fdf.c ft_count.c ft_paint.c
 
 LIB = @make -C libft/
 
