@@ -3,9 +3,12 @@
 
 CMakeFiles/fdf.dir/fdf.c.o
  /Users/dpiven/CLionProjects/fdf/./libft/libft.h
- /Users/dpiven/CLionProjects/fdf/./minilibx_macos/mlx.h
  /Users/dpiven/CLionProjects/fdf/fdf.c
  /Users/dpiven/CLionProjects/fdf/fdf.h
+CMakeFiles/fdf.dir/ft_count.c.o
+ /Users/dpiven/CLionProjects/fdf/./libft/libft.h
+ /Users/dpiven/CLionProjects/fdf/fdf.h
+ /Users/dpiven/CLionProjects/fdf/ft_count.c
 CMakeFiles/fdf.dir/libft/ft_atoi.c.o
  /Users/dpiven/CLionProjects/fdf/libft/ft_atoi.c
  /Users/dpiven/CLionProjects/fdf/libft/libft.h
@@ -263,7 +266,6 @@ CMakeFiles/fdf.dir/libft/get_next_line.c.o
  /Users/dpiven/CLionProjects/fdf/libft/libft.h
 CMakeFiles/fdf.dir/main.c.o
  /Users/dpiven/CLionProjects/fdf/./libft/libft.h
- /Users/dpiven/CLionProjects/fdf/./minilibx_macos/mlx.h
  /Users/dpiven/CLionProjects/fdf/fdf.h
  /Users/dpiven/CLionProjects/fdf/main.c
 CMakeFiles/fdf.dir/minilibx_macos/font.c.o

@@ -26,5 +26,6 @@ typedef struct		s_fdf
 int					ft_fdf(char *s, t_fdf *fdf);
 int 				ft_validmap(char **line, int i, t_fdf *fdf);
 int					ft_count_words(char const *s, char c);
+int					**ft_malloc_mtrx(t_fdf *fdf);
 
 #endif
