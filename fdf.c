@@ -132,6 +132,9 @@ t_fdf	*ft_create_mtrx(t_fdf *fdf, char *s)
 		x++;
 	}
 	close(fd);
+	fdf->midx = fdf->w / 2;
+	fdf->midy = fdf->h / 2;
+	ft_printf("x%d y%d\n", fdf->midx, fdf->midy);
 	ft_printmap(fdf);
 	return (fdf);
 }

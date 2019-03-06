@@ -15,25 +15,23 @@
 static	void	paint_line(t_fdf *fdf, int dx, int dy)
 {
 	int fault;
+	int fault2;
 
-	fault = dy <= dx ? -dx : -dy;
-
+	fault = dx - dy;
+	mlx_pixel_put(fdf->init, fdf->win, fdf->cord.x1, fdf->cord.y1, fdf->cord.color);
 	while (fdf->cord.x0 != fdf->cord.x1 || fdf->cord.y0 != fdf->cord.y1)
 	{
-		mlx_pixel_put(fdf->init, fdf->win, \
-				fdf->cord.x0, fdf->cord.y0, fdf->cord.color);
-		if (dy <= dx)
-			fdf->cord.x0 += fdf->cord.sign_x;
-		else
-			fdf->cord.y0 += fdf->cord.sign_y;
-		fault = dy <= dx ? fault + 2 * dy : fault + 2 * dx;
-		if (fault > 0)
+		mlx_pixel_put(fdf->init, fdf->win, fdf->cord.x0, fdf->cord.y0, fdf->cord.color);
+		fault2 = fault * 2;
+		if (fault2 > -dy)
 		{
-			fault = dy <= dx ? fault - 2 * dx : fault - 2 * dy;
-			if (dx <= dy)
-				fdf->cord.y0 += fdf->cord.sign_y;
-			else
-				fdf->cord.x0 += fdf->cord.sign_x;
+			fault -= dy;
+			fdf->cord.x0 += fdf->cord.sign_x;
+		}
+		if (fault2 < dx)
+		{
+			fault += dx;
+			fdf->cord.y0 += fdf->cord.sign_y;
 		}
 	}
 }
@@ -43,54 +41,41 @@ void			paint_map(t_fdf *fdf)
 	int dx;
 	int dy;
 
-	dx = fabs(fdf->cord.x1 - fdf->cord.x0);
-	dy = fabs(fdf->cord.y1 - fdf->cord.y0);
-	fdf->cord.sign_x = fdf->cord.x1 >= fdf->cord.x0 ? 1 : -1;
-	fdf->cord.sign_y = fdf->cord.y1 >= fdf->cord.y0 ? 1 : -1;
-	mlx_pixel_put(fdf->init, fdf->win, \
-			fdf->cord.x0, fdf->cord.y0, fdf->cord.color);
-//	fdf->cord.fast_l = (dy <= dx) ? 'x' : 'y';
+	dx = abs(fdf->cord.x1 - fdf->cord.x0);
+	dy = abs(fdf->cord.y1 - fdf->cord.y0);
+	fdf->cord.sign_x = fdf->cord.x0 < fdf->cord.x1 ? 1 : -1;
+	fdf->cord.sign_y = fdf->cord.y0 < fdf->cord.y1 ? 1 : -1;
 	paint_line(fdf, dx, dy);
 }
 
-static	void	h_v_line(t_fdf *fdf, int x, int y, int i)
+static	void	h_line(t_fdf *fdf, int x, int y)
 {
-	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);// - \
-		(x * fdf->cord.angle) + (x * fdf->cord.angle_y);
-	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step);// - fdf->map[x][y];// \
-		* fdf->cord.po_z - (y * fdf->cord.angle_z) - (y * fdf->p.angle_y);
-		i == 1 ? y++ : x++;
-	fdf->cord.x1 = fdf->cord.x_s + (y * fdf->cord.step);// - \
-		(x * fdf->cord.angle) + (x * fdf->p.angle_y);
-	fdf->cord.y1 = fdf->cord.y_s + (x * fdf->cord.step);// - \
-		fdf->map[x][y + 1] * fdf->cord.po_z - ((y + 1) \
-		* fdf->cord.angle_z) - ((y + 1) * fdf->cord.angle_y);
-//	two_colors(fdf, x, y, fdf->map.values[x][y]);
+	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);
+	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step) - fdf->map[x][y] * fdf->cord.z_s;
+	fdf->cord.x1 = fdf->cord.x_s + ((y + 1) * fdf->cord.step);
+	fdf->cord.y1 = fdf->cord.y_s + (x * fdf->cord.step) - fdf->map[x][y + 1] * fdf->cord.z_s;
 	paint_map(fdf);
 }
 
-//static	void	v_line(t_fdf *fdf, int x, int y)
-//{
-//	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);// - \
-//		(i * fdf->cord.angle) + (i * fdf->cord.angle_y);
-//	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step);// - \
-//		fdf->map[i][j] * fdf->cord.po_z - ((j) * \
-//		fdf->cord.angle_z) - (j * fdf->cord.angle_y);
-//	fdf->cord.x1 = fdf->cord.x_s + (y * fdf->cord.step);// - ((i + 1) * \
-//		fdf->p.angle) + ((i + 1) * fdf->cord.angle_y);
-//	fdf->cord.y1 = fdf->cord.y_s + ((x + 1) * fdf->cord.step);// - \
-//		fdf->map[i + 1][j] * fdf->cord.po_z - \
-//		(j * fdf->cord.angle_z) - (j * fdf->cord.angle_y);
-////	two_colors(fdf, i, j, fdf->map.values[i][j]);
-//	paint_map(fdf);
-//}
+static	void	v_line(t_fdf *fdf, int x, int y)
+{
+	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);
+	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step) - fdf->map[x][y] * fdf->cord.z_s;
+	fdf->cord.x1 = fdf->cord.x_s + (y * fdf->cord.step);
+	fdf->cord.y1 = fdf->cord.y_s + ((x + 1) * fdf->cord.step) - fdf->map[x + 1][y] * fdf->cord.z_s;
+	paint_map(fdf);
+}
 
 
 void		initial_values(t_fdf *fdf)
 {
 	fdf->cord.x_s = 450;
 	fdf->cord.y_s = 250;
-	fdf->cord.step = 25;
+	fdf->cord.step = 10;
+	fdf->cord.z_s = 0;
+	fdf->cord.i = 0;
+	fdf->cord.color = 16777215;
+	fdf->i = 1;
 }
 
 int	ft_paint_fdf(t_fdf *fdf)
@@ -99,18 +84,18 @@ int	ft_paint_fdf(t_fdf *fdf)
 	int y;
 
 	x = 0;
-	initial_values(fdf);
-	fdf->cord.color = 13172735;
-//	mlx_string_put(fdf->init, fdf->win, 300, 10, 5822086, "Press key 0");
-	while (x <= fdf->h)
+	mlx_string_put(fdf->init, fdf->win, 10, 20, MENU, "Press key 0 to open 'MENU'");
+	if (fdf->i == 0)
+		initial_values(fdf);
+	while (x < fdf->h)
 	{
 		y = 0;
-		while (y <= fdf->w)
+		while (y < fdf->w)
 		{
-			if (y < fdf->w)
-				h_v_line(fdf, x, y, 1);
-			if (x < fdf->h)
-				h_v_line(fdf, x, y, 0);
+			if (y < fdf->w - 1)
+				h_line(fdf, x, y);
+			if (x < fdf->h - 1)
+				v_line(fdf, x, y);
 			y++;
 		}
 		x++;
