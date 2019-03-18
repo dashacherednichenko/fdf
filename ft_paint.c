@@ -12,16 +12,22 @@
 
 #include "fdf.h"
 
-static	void	paint_line(t_fdf *fdf, int dx, int dy)
+//int ft_rotate(t_fdf *fdf)
+
+
+static	void	paint_line(t_fdf *fdf, int dx, int dy, int color)
 {
 	int fault;
 	int fault2;
+//	int color;
 
 	fault = dx - dy;
-	mlx_pixel_put(fdf->init, fdf->win, fdf->cord.x1, fdf->cord.y1, fdf->cord.color);
+//	color = fdf->map[x][y] ? fdf->cord.else_color : fdf->cord.color;
+	mlx_pixel_put(fdf->init, fdf->win, fdf->cord.x0, fdf->cord.y0, color);
+	mlx_pixel_put(fdf->init, fdf->win, fdf->cord.x1, fdf->cord.y1, color);
 	while (fdf->cord.x0 != fdf->cord.x1 || fdf->cord.y0 != fdf->cord.y1)
 	{
-		mlx_pixel_put(fdf->init, fdf->win, fdf->cord.x0, fdf->cord.y0, fdf->cord.color);
+		mlx_pixel_put(fdf->init, fdf->win, fdf->cord.x0, fdf->cord.y0, color);
 		fault2 = fault * 2;
 		if (fault2 > -dy)
 		{
@@ -36,7 +42,7 @@ static	void	paint_line(t_fdf *fdf, int dx, int dy)
 	}
 }
 
-void			paint_map(t_fdf *fdf)
+void			paint_map(t_fdf *fdf, int color)
 {
 	int dx;
 	int dy;
@@ -45,25 +51,31 @@ void			paint_map(t_fdf *fdf)
 	dy = abs(fdf->cord.y1 - fdf->cord.y0);
 	fdf->cord.sign_x = fdf->cord.x0 < fdf->cord.x1 ? 1 : -1;
 	fdf->cord.sign_y = fdf->cord.y0 < fdf->cord.y1 ? 1 : -1;
-	paint_line(fdf, dx, dy);
+	paint_line(fdf, dx, dy, color);
 }
 
 static	void	h_line(t_fdf *fdf, int x, int y)
 {
+	int color;
+
+	color = fdf->map[x][y] && fdf->map[x][y + 1] ? fdf->cord.else_color : fdf->cord.color;
 	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);
 	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step) - fdf->map[x][y] * fdf->cord.z_s;
 	fdf->cord.x1 = fdf->cord.x_s + ((y + 1) * fdf->cord.step);
 	fdf->cord.y1 = fdf->cord.y_s + (x * fdf->cord.step) - fdf->map[x][y + 1] * fdf->cord.z_s;
-	paint_map(fdf);
+	paint_map(fdf, color);
 }
 
 static	void	v_line(t_fdf *fdf, int x, int y)
 {
+	int color;
+
+	color = fdf->map[x][y] && fdf->map[x + 1][y] ? fdf->cord.else_color : fdf->cord.color;
 	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);
 	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step) - fdf->map[x][y] * fdf->cord.z_s;
 	fdf->cord.x1 = fdf->cord.x_s + (y * fdf->cord.step);
 	fdf->cord.y1 = fdf->cord.y_s + ((x + 1) * fdf->cord.step) - fdf->map[x + 1][y] * fdf->cord.z_s;
-	paint_map(fdf);
+	paint_map(fdf, color);
 }
 
 
@@ -75,6 +87,7 @@ void		initial_values(t_fdf *fdf)
 	fdf->cord.z_s = 0;
 	fdf->cord.i = 0;
 	fdf->cord.color = 16777215;
+	fdf->cord.else_color = 15865546;
 	fdf->i = 1;
 }
 

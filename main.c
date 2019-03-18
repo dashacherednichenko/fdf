@@ -12,6 +12,11 @@
 
 #include "fdf.h"
 
+int		exit_fdf(void)
+{
+	system("leaks -q fdf > leaks.txt");
+	exit(0);
+}
 
 
 void	show_menu(t_fdf *fdf)
@@ -53,10 +58,8 @@ void ft_init_colors(t_fdf *fdf)
 	fdf->cord.colors[7] = 1230728;
 	fdf->cord.colors[8] = 874583;
 	fdf->cord.colors[9] = 15441387;
-	fdf->cord.colors[10] = 15449835;
-	fdf->cord.colors[11] = 14474475;
-	fdf->cord.colors[12] = 14469340;
-	fdf->cord.colors[13] = 16777215;
+	fdf->cord.colors[10] = 16777215;
+	fdf->cord.colors[11] = 5250600;
 }
 
 int	deal_key(int key, t_fdf *fdf)
@@ -65,12 +68,12 @@ int	deal_key(int key, t_fdf *fdf)
 
 //	i = 0;
 	mlx_clear_window(fdf->init, fdf->win);
-	printf("%d\n", key);
+//	printf("%d\n", key);
 	if (key == 82 || key == 29)
 		show_menu(fdf);
 	if (key == 7 || key == 53)
 	{
-//		system("leaks -q fdf");
+		system("leaks -q fdf > leaks.txt");
 		exit(0);
 	}
 	if ((key == 69 || key == 126) && fdf->cord.step <= 100)
@@ -83,10 +86,12 @@ int	deal_key(int key, t_fdf *fdf)
 		fdf->cord.z_s -= 1;
 	if (key == 8)
 	{
-		if (fdf->cord.i >= 13)
+		if (fdf->cord.i >= 11)
 			fdf->cord.i = 0;
 		fdf->cord.color = fdf->cord.colors[fdf->cord.i];
+		fdf->cord.else_color = fdf->cord.colors[fdf->cord.i + 1];
 		fdf->cord.i++;
+		printf("color %d\n", fdf->cord.color);
 	}
 	if ((key == 18 ||  key == 83) && fdf->cord.x_s >= 1)
 		fdf->cord.x_s -= 10;
@@ -111,7 +116,7 @@ int	main(int argc, char **argv)
 	{
 		if (ft_fdf(argv[1], fdf, 0) == 0)
 		{
-			system("leaks -q fdf");
+			system("leaks -q fdf > leaks.txt");
 			return 0;
 		}
 		fdf->init = mlx_init();
@@ -119,8 +124,9 @@ int	main(int argc, char **argv)
 		ft_paint_fdf(fdf);
 		ft_init_colors(fdf);
 		mlx_hook(fdf->win, 2, 0, deal_key, fdf);
+		mlx_hook(fdf->win, 17, 0, exit_fdf, NULL);
 		mlx_loop(fdf->init);
 	}
-	system("leaks -q fdf");
+	system("leaks -q fdf > leaks.txt");
 	return 0;
 }

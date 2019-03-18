@@ -35,8 +35,9 @@ typedef struct		s_cord
 	int				sign_x;
 	int				sign_y;
 	double			step;
-	int				colors[14];
+	int				colors[12];
 	int 			color;
+	int 			else_color;
 	int 			i;
 }					t_cord;
 
