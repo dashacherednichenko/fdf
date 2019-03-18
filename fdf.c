@@ -117,7 +117,7 @@ int	*ft_toint(char *s, t_fdf *fdf, int x)
 	return (fdf->map[x]);
 }
 
-t_fdf	*ft_create_mtrx(t_fdf *fdf, char *s)
+t_fdf	*ft_create_map(t_fdf *fdf, char *s)
 {
 	int		fd;
 	int		x;
@@ -132,11 +132,30 @@ t_fdf	*ft_create_mtrx(t_fdf *fdf, char *s)
 		x++;
 	}
 	close(fd);
-	fdf->midx = fdf->w / 2;
-	fdf->midy = fdf->h / 2;
-	ft_printf("x%d y%d\n", fdf->midx, fdf->midy);
+//	fdf->midx = fdf->w / 2;
+//	fdf->midy = fdf->h / 2;
+//	ft_printf("x%d y%d\n", fdf->midx, fdf->midy);
 	ft_printmap(fdf);
 	return (fdf);
+}
+
+double	**create_bz_mtrx(int i)
+{
+	double	**bz_mtrx;
+
+	bz_mtrx = (double**)malloc(sizeof(double*) * 3);
+	while (i < 3)
+		bz_mtrx[i++] = (double*)malloc(sizeof(double) * 3);
+	bz_mtrx[0][0] = 1;
+	bz_mtrx[0][1] = 0;
+	bz_mtrx[0][2] = 0;
+	bz_mtrx[1][0] = 0;
+	bz_mtrx[1][1] = 1;
+	bz_mtrx[1][2] = 0;
+	bz_mtrx[2][0] = 0;
+	bz_mtrx[2][1] = 0;
+	bz_mtrx[2][2] = 1;
+	return (bz_mtrx);
 }
 
 int	ft_fdf(char *s, t_fdf *fdf, int i)
@@ -167,6 +186,7 @@ int	ft_fdf(char *s, t_fdf *fdf, int i)
 	}
 	fdf->h = i;
 	close(fd);
-	ft_create_mtrx(ft_malloc_mtrx(fdf), s);
+	ft_create_map(ft_malloc_mtrx(fdf), s);
+//	fdf->mtrx = create_bz_mtrx(0);
 	return (1);
 }
