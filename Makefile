@@ -14,7 +14,7 @@ NAME = fdf
 
 FLAGSwww = -Wall -Wextra -Werror
 FLAGS = -lmlx -framework OpenGL -framework Appkit
-SRCS =	main.c fdf.c ft_count.c ft_paint.c create_and_free.c ft_rotate.c menu.c
+SRCS =	main.c fdf.c ft_count.c ft_paint.c create_and_free.c ft_rotate.c menu.c bonus.c
 
 INC = fdf.h
 

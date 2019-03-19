@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/bonus.c">
+			<Option target="fdf"/>
+		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/create_and_free.c">
 			<Option target="fdf"/>
 		</Unit>

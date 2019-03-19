@@ -123,6 +123,33 @@ fdf/fast:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/build
 .PHONY : fdf/fast
 
+bonus.o: bonus.c.o
+
+.PHONY : bonus.o
+
+# target to build an object file
+bonus.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/bonus.c.o
+.PHONY : bonus.c.o
+
+bonus.i: bonus.c.i
+
+.PHONY : bonus.i
+
+# target to preprocess a source file
+bonus.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/bonus.c.i
+.PHONY : bonus.c.i
+
+bonus.s: bonus.c.s
+
+.PHONY : bonus.s
+
+# target to generate assembly for a file
+bonus.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/bonus.c.s
+.PHONY : bonus.c.s
+
 create_and_free.o: create_and_free.c.o
 
 .PHONY : create_and_free.o
@@ -2832,6 +2859,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fdf"
+	@echo "... bonus.o"
+	@echo "... bonus.i"
+	@echo "... bonus.s"
 	@echo "... create_and_free.o"
 	@echo "... create_and_free.i"
 	@echo "... create_and_free.s"

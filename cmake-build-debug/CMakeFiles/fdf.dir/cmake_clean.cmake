@@ -99,6 +99,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fdf.dir/create_and_free.c.o"
   "CMakeFiles/fdf.dir/ft_rotate.c.o"
   "CMakeFiles/fdf.dir/menu.c.o"
+  "CMakeFiles/fdf.dir/bonus.c.o"
   "fdf.pdb"
   "fdf"
 )

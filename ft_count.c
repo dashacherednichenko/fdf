@@ -44,7 +44,27 @@ int	ft_printmap(t_fdf *fdf)
 		y = 0;
 		while (y < fdf->w)
 		{
-			ft_printf("%3d ", fdf->map[x][y]);
+			ft_printf("%8d ", fdf->map[x][y]);
+			y++;
+		}
+		ft_printf("\n");
+		x++;
+	}
+	return (0);
+}
+
+int	ft_printmtrx33(double **a)
+{
+	int x;
+	int y;
+
+	x = 0;
+	while (x < 3)
+	{
+		y = 0;
+		while (y < 3)
+		{
+			ft_printf("%8f ", a[x][y]);
 			y++;
 		}
 		ft_printf("\n");

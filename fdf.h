@@ -70,18 +70,20 @@ t_fdf				*ft_malloc_mtrx(t_fdf *fdf);
 t_fdf				*ft_create_map(t_fdf *fdf, char *s);
 int					*ft_toint(char *s, t_fdf *fdf, int x);
 int					ft_paint_fdf(t_fdf *fdf);
-double				**ft_rotate_x(t_fdf *fdf, int sign);
-double				**ft_rotate_y(t_fdf *fdf, int sign);
-double				**ft_rotate_z(t_fdf *fdf, int sign);
+double				**ft_rotate_x(t_fdf *fdf, int sign, double angle);
+double				**ft_rotate_y(t_fdf *fdf, int sign, double angle);
+double				**ft_rotate_z(t_fdf *fdf, int sign, double angle);
 double				**create_bz_mtrx(int i);
 void				create_new_cord(t_fdf *fdf, int x, int y);
 void				initial_values(t_fdf *fdf);
 void				ft_free_double_mtrx(double **a);
 double				**mltp_mtrx(double **a, double b[3][3], t_fdf *fdf);
 int					ft_printmap(t_fdf *fdf);
+int					ft_printmtrx33(double **a);
 void				ft_change_color(t_fdf *fdf);
 void				show_menu(t_fdf *fdf);
 int					deal_key(int key, t_fdf *fdf);
 int					exit_fdf(void);
+void				ft_init_center(t_fdf *fdf);
 
 #endif
