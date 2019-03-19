@@ -47,9 +47,8 @@ int		main(int argc, char **argv)
 	t_fdf	*fdf;
 
 	fdf = (t_fdf*)malloc(sizeof(t_fdf));
-	if (argc != 2)
-		ft_color_printf(USAGE);
-	else
+	argc != 2 ? ft_color_printf(USAGE) : 0;
+	if (argc == 2)
 	{
 		if (ft_fdf(argv[1], fdf, 0) == 0)
 		{
@@ -58,12 +57,17 @@ int		main(int argc, char **argv)
 		}
 		fdf->init = mlx_init();
 		fdf->win = mlx_new_window(fdf->init, 2000, 1200, "fdf");
+		if (fdf->w == 1 && fdf->h == 1)
+		{
+			ft_color_printf("C_REDonly 1 point!C_GRN give valid map!\nC_of");
+			return (0);
+		}
 		ft_paint_fdf(fdf);
 		ft_init_colors(fdf);
 		mlx_hook(fdf->win, 2, 0, deal_key, fdf);
 		mlx_hook(fdf->win, 17, 0, exit_fdf, NULL);
 		mlx_loop(fdf->init);
 	}
-	system("leaks -q fdf > leaks.txt");
+	system("leaks -q fdf");
 	return (0);
 }

@@ -14,7 +14,7 @@
 # define FDF_H
 # define MENU 8087790
 
-# include "libft/libft.h"
+# include "./libft/libft.h"
 # include "mlx.h"
 # include <math.h>
 
@@ -85,5 +85,8 @@ void				show_menu(t_fdf *fdf);
 int					deal_key(int key, t_fdf *fdf);
 int					exit_fdf(void);
 void				ft_init_center(t_fdf *fdf);
+void				calc_step(t_fdf *fdf);
+void				ft_proection_slide(t_fdf *fdf);
+void				ft_proection(t_fdf *fdf);
 
 #endif

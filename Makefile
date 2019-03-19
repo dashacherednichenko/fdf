@@ -6,7 +6,7 @@
 #    By: dpiven <dpiven@student.unit.ua>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/27 15:15:05 by dpiven            #+#    #+#              #
-#    Updated: 2019/02/27 15:15:08 by dpiven           ###   ########.fr        #
+#    Updated: 2019/03/19 20:07:19 by dpiven           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -18,15 +18,15 @@ SRCS =	main.c fdf.c ft_count.c ft_paint.c create_and_free.c ft_rotate.c menu.c b
 
 INC = fdf.h
 
-all: $(NAME)
+all: libft $(NAME)
 
 OBJ = $(SRCS:.c=.o)
 
 .PHONY : libft
 libft:
-	@make -C./libft
+	@make -C ./libft
 
-$(NAME): libft $(OBJ)
+$(NAME): $(OBJ) ./libft/libft.a
 	@gcc -o $(NAME) $(OBJ) $(FLAGS) ./libft/libft.a
 	@echo "\033[34mFDF compilation DONE.\033[0m"
 

@@ -141,4 +141,5 @@ char				*ft_uitoa_base(unsigned long long int value, int base);
 char				*ft_itoa_baseld(long double value, int base);
 t_flags				*ft_obnul_fl(t_flags *flags);
 t_flags				*ft_nultchn(t_flags *f);
+
 #endif

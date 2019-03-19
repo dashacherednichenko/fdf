@@ -38,9 +38,7 @@ double			**ft_rotate_x(t_fdf *fdf, int sign, double angle)
 {
 	double **newmtrx;
 	double rotate_x[3][3];
-//	double angle;
 
-//	angle = 2 * 3.14 / 180;
 	rotate_x[0][0] = 1;
 	rotate_x[0][1] = 0;
 	rotate_x[0][2] = 0;
@@ -58,9 +56,7 @@ double			**ft_rotate_y(t_fdf *fdf, int sign, double angle)
 {
 	double **newmtrx;
 	double rotate_y[3][3];
-//	double angle;
 
-//	angle = 2 * 3.14 / 180;
 	rotate_y[0][0] = cos(sign * angle);
 	rotate_y[0][1] = 0;
 	rotate_y[0][2] = sin(sign * angle);
@@ -78,9 +74,7 @@ double			**ft_rotate_z(t_fdf *fdf, int sign, double angle)
 {
 	double **newmtrx;
 	double rotate_z[3][3];
-//	double angle;
 
-//	angle = 2 * 3.14 / 180;
 	rotate_z[0][0] = cos(sign * angle);
 	rotate_z[0][1] = -sin(sign * angle);
 	rotate_z[0][2] = 0;

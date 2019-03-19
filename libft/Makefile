@@ -6,21 +6,110 @@
 #    By: dpiven <dpiven@student.unit.ua>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/26 15:28:53 by dpiven            #+#    #+#              #
-#    Updated: 2018/12/07 15:54:54 by dpiven           ###   ########.fr        #
+#    Updated: 2019/03/19 19:44:38 by dpiven           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
 NAME = libft.a
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -std=c99
-OBJS = *.o
-SRC = *.c
+CFLAGS = -Wall -Wextra -Werror
+SRC =   ft_atoi.c \
+        ft_binar.c \
+        ft_bzero.c \
+        ft_declima.c \
+        ft_flags.c \
+        ft_float.c \
+        ft_isalnum.c \
+        ft_isalpha.c \
+        ft_isascii.c \
+        ft_isdigit.c \
+        ft_isprint.c \
+        ft_itoa.c \
+        ft_itoa_base.c \
+        ft_itoa_baseld.c \
+        ft_list_last.c \
+        ft_list_size.c \
+        ft_lstadd.c \
+        ft_lstaddend.c \
+        ft_lstdel.c \
+        ft_lstdelone.c \
+        ft_lstiter.c \
+        ft_lstmap.c \
+        ft_lstnew.c \
+        ft_lstsplit.c \
+        ft_memalloc.c \
+        ft_memccpy.c \
+        ft_memchr.c \
+        ft_memcmp.c \
+        ft_memcpy.c \
+        ft_memdel.c \
+        ft_memmove.c \
+        ft_memset.c \
+        ft_obnul_flags.c \
+        ft_octal.c \
+        ft_pars.c \
+        ft_percent.c \
+        ft_printf.c \
+        ft_ptr.c \
+        ft_putchar.c \
+        ft_putchar_fd.c \
+        ft_putcharn.c \
+        ft_putendl.c \
+        ft_putendl_fd.c \
+        ft_putnbr.c \
+        ft_putnbr_fd.c \
+        ft_putnbrf.c \
+        ft_putnbrll.c \
+        ft_putnbrlln.c \
+        ft_putstr.c \
+        ft_putstr_fd.c \
+        ft_putstrn.c \
+        ft_retnbr_float.c \
+        ft_sqrt.c \
+        ft_strcat.c \
+        ft_strchr.c \
+        ft_strclr.c \
+        ft_strcmp.c \
+        ft_strcpy.c \
+        ft_strdel.c \
+        ft_strdup.c \
+        ft_strequ.c \
+        ft_striter.c \
+        ft_striteri.c \
+        ft_strjoin.c \
+        ft_strjoinfree.c \
+        ft_strlcat.c \
+        ft_strlen.c \
+        ft_strlen.o \
+        ft_strlowcase.c \
+        ft_strmap.c \
+        ft_strmapi.c \
+        ft_strncat.c \
+        ft_strncmp.c \
+        ft_strncpy.c \
+        ft_strnequ.c \
+        ft_strnew.c \
+        ft_strnstr.c \
+        ft_strrchr.c \
+        ft_strsplit.c \
+        ft_strstr.c \
+        ft_strsub.c \
+        ft_strtrim.c \
+        ft_tolower.c \
+        ft_toupper.c \
+        ft_uitoa_base.c \
+        get_next_line.c \
+
+OBJS = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME):
-	@gcc -c $(CFLAGS) $(SRC)
+$(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
+	@ranlib $(NAME)
+
+%.o: %.c
+	@gcc $(CFLAGS) -o $@ -c $<
 
 clean:
 	@rm -f $(OBJS)

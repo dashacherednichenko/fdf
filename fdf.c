@@ -6,7 +6,7 @@
 /*   By: dpiven <dpiven@student.unit.ua>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 16:37:04 by dpiven            #+#    #+#             */
-/*   Updated: 2019/02/27 16:37:06 by dpiven           ###   ########.fr       */
+/*   Updated: 2019/03/19 19:35:50 by dpiven           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ int	ft_validmap(char **l, int i, t_fdf *fdf)
 
 	ii = 0;
 	i == 0 ? fdf->w = ft_count_words(*l, ' ') : 0;
-	if (i != 0 && fdf->w != ft_count_words(*l, ' '))
+	if ((i != 0 && fdf->w != ft_count_words(*l, ' ')) || fdf->w == 0)
 		return (0);
 	s = *l;
-	while (ii < fdf->w)
+	while (s[ii])
 	{
 		if (ft_isdigit(s[ii]) || s[ii] == ' ' || s[ii] == '-' || s[ii] == '\n')
 			ii++;
@@ -65,14 +65,14 @@ int	*ft_toint(char *s, t_fdf *fdf, int x)
 		if (ft_isdigit(s[i]) || s[i] == '-')
 		{
 			fdf->map[x][y] = ft_atoi(&s[i]);
+			fdf->map[x][y] = fdf->map[x][y] > 300 ? 300 : fdf->map[x][y];
+			fdf->map[x][y] = fdf->map[x][y] < -300 ? -300 : fdf->map[x][y];
 			s[i] == '-' ? i++ : 0;
 			while (ft_isdigit(s[i]) && s[i] != '\0')
 				i++;
 			if (s[i] == ',')
-			{
 				while (s[i] != ' ' && s[i])
 					i++;
-			}
 			y++;
 		}
 		else
@@ -81,7 +81,7 @@ int	*ft_toint(char *s, t_fdf *fdf, int x)
 	return (fdf->map[x]);
 }
 
-int	ft_error_map(char	**l, char *s)
+int	ft_error_map(char **l, char *s)
 {
 	free(*l);
 	ft_color_printf("C_REDERROR in map C_GRN%s\nC_of", s);
@@ -98,7 +98,7 @@ int	ft_fdf(char *s, t_fdf *fdf, int i)
 		ft_color_printf("C_REDIT IS A DIRECTORY C_GRN%s\nC_of", s);
 		return (0);
 	}
-	if (ft_strstr(s, ".fdf") == 0 || (fd = open(s, O_RDONLY)) < 0)
+	if ((fd = open(s, O_RDONLY)) < 0)
 	{
 		ft_color_printf("C_REDNo file C_GRN%s\nC_of", s);
 		return (0);
