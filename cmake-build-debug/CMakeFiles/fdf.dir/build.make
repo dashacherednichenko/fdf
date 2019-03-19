@@ -1318,6 +1318,45 @@ CMakeFiles/fdf.dir/ft_paint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/ft_paint.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/ft_paint.c -o CMakeFiles/fdf.dir/ft_paint.c.s
 
+CMakeFiles/fdf.dir/create_and_free.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/create_and_free.c.o: ../create_and_free.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/fdf.dir/create_and_free.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/create_and_free.c.o   -c /Users/dpiven/CLionProjects/fdf/create_and_free.c
+
+CMakeFiles/fdf.dir/create_and_free.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/create_and_free.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/create_and_free.c > CMakeFiles/fdf.dir/create_and_free.c.i
+
+CMakeFiles/fdf.dir/create_and_free.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/create_and_free.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/create_and_free.c -o CMakeFiles/fdf.dir/create_and_free.c.s
+
+CMakeFiles/fdf.dir/ft_rotate.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/ft_rotate.c.o: ../ft_rotate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/fdf.dir/ft_rotate.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/ft_rotate.c.o   -c /Users/dpiven/CLionProjects/fdf/ft_rotate.c
+
+CMakeFiles/fdf.dir/ft_rotate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/ft_rotate.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/ft_rotate.c > CMakeFiles/fdf.dir/ft_rotate.c.i
+
+CMakeFiles/fdf.dir/ft_rotate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/ft_rotate.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/ft_rotate.c -o CMakeFiles/fdf.dir/ft_rotate.c.s
+
+CMakeFiles/fdf.dir/menu.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/menu.c.o: ../menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/fdf.dir/menu.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/menu.c.o   -c /Users/dpiven/CLionProjects/fdf/menu.c
+
+CMakeFiles/fdf.dir/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/menu.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dpiven/CLionProjects/fdf/menu.c > CMakeFiles/fdf.dir/menu.c.i
+
+CMakeFiles/fdf.dir/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/menu.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dpiven/CLionProjects/fdf/menu.c -o CMakeFiles/fdf.dir/menu.c.s
+
 # Object files for target fdf
 fdf_OBJECTS = \
 "CMakeFiles/fdf.dir/libft/ft_atoi.c.o" \
@@ -1416,7 +1455,10 @@ fdf_OBJECTS = \
 "CMakeFiles/fdf.dir/main.c.o" \
 "CMakeFiles/fdf.dir/fdf.c.o" \
 "CMakeFiles/fdf.dir/ft_count.c.o" \
-"CMakeFiles/fdf.dir/ft_paint.c.o"
+"CMakeFiles/fdf.dir/ft_paint.c.o" \
+"CMakeFiles/fdf.dir/create_and_free.c.o" \
+"CMakeFiles/fdf.dir/ft_rotate.c.o" \
+"CMakeFiles/fdf.dir/menu.c.o"
 
 # External object files for target fdf
 fdf_EXTERNAL_OBJECTS =
@@ -1518,9 +1560,12 @@ fdf: CMakeFiles/fdf.dir/main.c.o
 fdf: CMakeFiles/fdf.dir/fdf.c.o
 fdf: CMakeFiles/fdf.dir/ft_count.c.o
 fdf: CMakeFiles/fdf.dir/ft_paint.c.o
+fdf: CMakeFiles/fdf.dir/create_and_free.c.o
+fdf: CMakeFiles/fdf.dir/ft_rotate.c.o
+fdf: CMakeFiles/fdf.dir/menu.c.o
 fdf: CMakeFiles/fdf.dir/build.make
 fdf: CMakeFiles/fdf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Linking C executable fdf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Linking C executable fdf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

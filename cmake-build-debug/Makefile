@@ -123,6 +123,33 @@ fdf/fast:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/build
 .PHONY : fdf/fast
 
+create_and_free.o: create_and_free.c.o
+
+.PHONY : create_and_free.o
+
+# target to build an object file
+create_and_free.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/create_and_free.c.o
+.PHONY : create_and_free.c.o
+
+create_and_free.i: create_and_free.c.i
+
+.PHONY : create_and_free.i
+
+# target to preprocess a source file
+create_and_free.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/create_and_free.c.i
+.PHONY : create_and_free.c.i
+
+create_and_free.s: create_and_free.c.s
+
+.PHONY : create_and_free.s
+
+# target to generate assembly for a file
+create_and_free.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/create_and_free.c.s
+.PHONY : create_and_free.c.s
+
 fdf.o: fdf.c.o
 
 .PHONY : fdf.o
@@ -203,6 +230,33 @@ ft_paint.s: ft_paint.c.s
 ft_paint.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_paint.c.s
 .PHONY : ft_paint.c.s
+
+ft_rotate.o: ft_rotate.c.o
+
+.PHONY : ft_rotate.o
+
+# target to build an object file
+ft_rotate.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_rotate.c.o
+.PHONY : ft_rotate.c.o
+
+ft_rotate.i: ft_rotate.c.i
+
+.PHONY : ft_rotate.i
+
+# target to preprocess a source file
+ft_rotate.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_rotate.c.i
+.PHONY : ft_rotate.c.i
+
+ft_rotate.s: ft_rotate.c.s
+
+.PHONY : ft_rotate.s
+
+# target to generate assembly for a file
+ft_rotate.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/ft_rotate.c.s
+.PHONY : ft_rotate.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -2526,6 +2580,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/main.c.s
 .PHONY : main.c.s
 
+menu.o: menu.c.o
+
+.PHONY : menu.o
+
+# target to build an object file
+menu.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/menu.c.o
+.PHONY : menu.c.o
+
+menu.i: menu.c.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/menu.c.i
+.PHONY : menu.c.i
+
+menu.s: menu.c.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/menu.c.s
+.PHONY : menu.c.s
+
 minilibx_macos/font.o: minilibx_macos/font.c.o
 
 .PHONY : minilibx_macos/font.o
@@ -2751,6 +2832,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fdf"
+	@echo "... create_and_free.o"
+	@echo "... create_and_free.i"
+	@echo "... create_and_free.s"
 	@echo "... fdf.o"
 	@echo "... fdf.i"
 	@echo "... fdf.s"
@@ -2760,6 +2844,9 @@ help:
 	@echo "... ft_paint.o"
 	@echo "... ft_paint.i"
 	@echo "... ft_paint.s"
+	@echo "... ft_rotate.o"
+	@echo "... ft_rotate.i"
+	@echo "... ft_rotate.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -3018,6 +3105,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
 	@echo "... minilibx_macos/font.o"
 	@echo "... minilibx_macos/font.i"
 	@echo "... minilibx_macos/font.s"

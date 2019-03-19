@@ -4,9 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/dpiven/CLionProjects/fdf/create_and_free.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/create_and_free.c.o"
   "/Users/dpiven/CLionProjects/fdf/fdf.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/fdf.c.o"
   "/Users/dpiven/CLionProjects/fdf/ft_count.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/ft_count.c.o"
   "/Users/dpiven/CLionProjects/fdf/ft_paint.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/ft_paint.c.o"
+  "/Users/dpiven/CLionProjects/fdf/ft_rotate.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/ft_rotate.c.o"
   "/Users/dpiven/CLionProjects/fdf/libft/ft_atoi.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/libft/ft_atoi.c.o"
   "/Users/dpiven/CLionProjects/fdf/libft/ft_binar.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/libft/ft_binar.c.o"
   "/Users/dpiven/CLionProjects/fdf/libft/ft_bzero.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/libft/ft_bzero.c.o"
@@ -93,6 +95,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dpiven/CLionProjects/fdf/libft/ft_uitoa_base.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/libft/ft_uitoa_base.c.o"
   "/Users/dpiven/CLionProjects/fdf/libft/get_next_line.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/libft/get_next_line.c.o"
   "/Users/dpiven/CLionProjects/fdf/main.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/main.c.o"
+  "/Users/dpiven/CLionProjects/fdf/menu.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/menu.c.o"
   "/Users/dpiven/CLionProjects/fdf/minilibx_macos/font.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/minilibx_macos/font.c.o"
   "/Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_init_loop.m" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/minilibx_macos/mlx_init_loop.m.o"
   "/Users/dpiven/CLionProjects/fdf/minilibx_macos/mlx_int_str_to_wordtab.c" "/Users/dpiven/CLionProjects/fdf/cmake-build-debug/CMakeFiles/fdf.dir/minilibx_macos/mlx_int_str_to_wordtab.c.o"

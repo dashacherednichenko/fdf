@@ -6,37 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/Users/dpiven/CLionProjects/fdf/./libft/libft.h
-fcntl.h
--
-string.h
--
-unistd.h
--
-stdlib.h
--
-stdio.h
--
-stdarg.h
--
+/Users/dpiven/CLionProjects/fdf/create_and_free.c
+fdf.h
+/Users/dpiven/CLionProjects/fdf/fdf.h
 
 /Users/dpiven/CLionProjects/fdf/fdf.c
 fdf.h
 /Users/dpiven/CLionProjects/fdf/fdf.h
 
 /Users/dpiven/CLionProjects/fdf/fdf.h
-./libft/libft.h
-/Users/dpiven/CLionProjects/fdf/./libft/libft.h
+libft/libft.h
+/Users/dpiven/CLionProjects/fdf/libft/libft.h
 mlx.h
 /Users/dpiven/CLionProjects/fdf/mlx.h
+math.h
+-
 
 /Users/dpiven/CLionProjects/fdf/ft_count.c
 fdf.h
 /Users/dpiven/CLionProjects/fdf/fdf.h
 
-/Users/dpiven/CLionProjects/fdf/libft/get_next_line.c
-libft.h
-/Users/dpiven/CLionProjects/fdf/libft/libft.h
+/Users/dpiven/CLionProjects/fdf/ft_paint.c
+fdf.h
+/Users/dpiven/CLionProjects/fdf/fdf.h
+
+/Users/dpiven/CLionProjects/fdf/ft_rotate.c
+fdf.h
+/Users/dpiven/CLionProjects/fdf/fdf.h
 
 /Users/dpiven/CLionProjects/fdf/libft/libft.h
 fcntl.h

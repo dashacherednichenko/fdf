@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/create_and_free.c">
+			<Option target="fdf"/>
+		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/fdf.c">
 			<Option target="fdf"/>
 		</Unit>
@@ -90,6 +93,9 @@
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/ft_paint.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/ft_rotate.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/libft/ft_atoi.c">
@@ -348,6 +354,9 @@
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/main.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/dpiven/CLionProjects/fdf/menu.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/dpiven/CLionProjects/fdf/minilibx_macos/font.c">

@@ -12,7 +12,7 @@
 
 #include "fdf.h"
 
-int ft_count_words(char const *s, char c)
+int	ft_count_words(char const *s, char c)
 {
 	int		i;
 	int		x;
@@ -31,4 +31,24 @@ int ft_count_words(char const *s, char c)
 		}
 	}
 	return (x);
+}
+
+int	ft_printmap(t_fdf *fdf)
+{
+	int x;
+	int y;
+
+	x = 0;
+	while (x < fdf->h)
+	{
+		y = 0;
+		while (y < fdf->w)
+		{
+			ft_printf("%3d ", fdf->map[x][y]);
+			y++;
+		}
+		ft_printf("\n");
+		x++;
+	}
+	return (0);
 }

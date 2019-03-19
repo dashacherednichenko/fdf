@@ -12,37 +12,15 @@
 
 #include "fdf.h"
 
-int	ft_printmap(t_fdf *fdf)
-{
-	int x;
-	int y;
-
-	x = 0;
-	while (x < fdf->h)
-	{
-		y = 0;
-		while (y < fdf->w)
-		{
-			ft_printf("%3d ", fdf->map[x][y]);
-			y++;
-		}
-		ft_printf("\n");
-		x++;
-	}
-	return (0);
-}
-
 int	ft_is_color(char *s, int ii)
 {
-	if (strncmp(&s[ii], "0x", 2))
+	if (ft_strncmp(&s[ii], "0x", 2))
 		return (0);
 	ii += 2;
 	while (s[ii] != ' ' && s[ii] != '\n' && s[ii] != '\0')
 	{
 		if (ft_isdigit(s[ii]) || ft_strchr("abcdefABCDEF\n", s[ii]))
-		{
 			ii++;
-		}
 		else
 			return (0);
 	}
@@ -75,20 +53,6 @@ int	ft_validmap(char **l, int i, t_fdf *fdf)
 	return (1);
 }
 
-t_fdf	*ft_malloc_mtrx(t_fdf *fdf)
-{
-	int i;
-
-	i = 0;
-	fdf->map = (int**)malloc(sizeof(int*) * fdf->h);
-	while (i < fdf->h)
-	{
-		fdf->map[i] = (int*)malloc(sizeof(int) * fdf->w);
-		i++;
-	}
-	return (fdf);
-}
-
 int	*ft_toint(char *s, t_fdf *fdf, int x)
 {
 	int y;
@@ -117,45 +81,11 @@ int	*ft_toint(char *s, t_fdf *fdf, int x)
 	return (fdf->map[x]);
 }
 
-t_fdf	*ft_create_map(t_fdf *fdf, char *s)
+int	ft_error_map(char	**l, char *s)
 {
-	int		fd;
-	int		x;
-	char	*l;
-
-	x = 0;
-	fd = open(s, O_RDONLY);
-	while (x < fdf->h && get_next_line(fd, &l) > 0)
-	{
-		fdf->map[x] = ft_toint(l, fdf, x);
-		free(l);
-		x++;
-	}
-	close(fd);
-//	fdf->midx = fdf->w / 2;
-//	fdf->midy = fdf->h / 2;
-//	ft_printf("x%d y%d\n", fdf->midx, fdf->midy);
-	ft_printmap(fdf);
-	return (fdf);
-}
-
-double	**create_bz_mtrx(int i)
-{
-	double	**bz_mtrx;
-
-	bz_mtrx = (double**)malloc(sizeof(double*) * 3);
-	while (i < 3)
-		bz_mtrx[i++] = (double*)malloc(sizeof(double) * 3);
-	bz_mtrx[0][0] = 1;
-	bz_mtrx[0][1] = 0;
-	bz_mtrx[0][2] = 0;
-	bz_mtrx[1][0] = 0;
-	bz_mtrx[1][1] = 1;
-	bz_mtrx[1][2] = 0;
-	bz_mtrx[2][0] = 0;
-	bz_mtrx[2][1] = 0;
-	bz_mtrx[2][2] = 1;
-	return (bz_mtrx);
+	free(*l);
+	ft_color_printf("C_REDERROR in map C_GRN%s\nC_of", s);
+	return (0);
 }
 
 int	ft_fdf(char *s, t_fdf *fdf, int i)
@@ -168,8 +98,7 @@ int	ft_fdf(char *s, t_fdf *fdf, int i)
 		ft_color_printf("C_REDIT IS A DIRECTORY C_GRN%s\nC_of", s);
 		return (0);
 	}
-	fd = open(s, O_RDONLY);
-	if (ft_strstr(s, ".fdf") == 0 || fd < 0)
+	if (ft_strstr(s, ".fdf") == 0 || (fd = open(s, O_RDONLY)) < 0)
 	{
 		ft_color_printf("C_REDNo file C_GRN%s\nC_of", s);
 		return (0);
@@ -177,16 +106,11 @@ int	ft_fdf(char *s, t_fdf *fdf, int i)
 	while (get_next_line(fd, &l) > 0)
 	{
 		if (ft_validmap(&l, i++, fdf) == 0)
-		{
-			free(l);
-			ft_color_printf("C_REDERROR in map C_GRN%s\nC_of", s);
-			return (0);
-		}
+			return (ft_error_map(&l, s));
 		free(l);
 	}
 	fdf->h = i;
 	close(fd);
 	ft_create_map(ft_malloc_mtrx(fdf), s);
-//	fdf->mtrx = create_bz_mtrx(0);
 	return (1);
 }

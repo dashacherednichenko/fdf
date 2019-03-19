@@ -12,23 +12,35 @@
 
 NAME = fdf
 
-SRC = main.c fdf.c ft_count.c ft_paint.c
+FLAGSwww = -Wall -Wextra -Werror
+FLAGS = -lmlx -framework OpenGL -framework Appkit
+SRCS =	main.c fdf.c ft_count.c ft_paint.c create_and_free.c ft_rotate.c menu.c
 
-LIB = @make -C libft/
+INC = fdf.h
 
 all: $(NAME)
 
-$(NAME):
-	$(LIB)
-#	@gcc -Wall -Wextra -Werror -o $(NAME) $(SRC) ./libft/libft.a -I./ -I./libft/ -lmlx -framework OpenGL -framework AppKit
-	@gcc -Wall  -o $(NAME) $(SRC) ./libft/libft.a -I./ -I./libft/ -lmlx -framework OpenGL -framework AppKit
-clean:
-	@$(LIB) clean
+OBJ = $(SRCS:.c=.o)
 
-fclean: clean
-	@$(LIB) fclean
-	@rm -f $(NAME)
+.PHONY : libft
+libft:
+	@make -C./libft
+
+$(NAME): libft $(OBJ)
+	@gcc -o $(NAME) $(OBJ) $(FLAGS) ./libft/libft.a
+	@echo "\033[34mFDF compilation DONE.\033[0m"
+
+%.o: %.c $(INC)
+	@gcc -o $@ -c $< $(FLAGSwww)
+
+clean:
+	@make clean -C ./libft
+	@rm -f $(OBJ)
 	@rm -f *.c~
 	@rm -f *~
+
+fclean: clean
+	@make fclean -C ./libft
+	@rm -f $(NAME)
 
 re: fclean all

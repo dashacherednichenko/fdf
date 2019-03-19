@@ -19,30 +19,6 @@ int		exit_fdf(void)
 	exit(0);
 }
 
-void	show_menu(t_fdf *fdf)
-{
-	mlx_string_put(fdf->init, fdf->win, 1450, 980, MENU,
-			"reset               :            ENTER");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1000, MENU,
-			"rotation X          :arrow right, left");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1020, MENU,
-			"rotation Y          :   arrow up, down");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1040, MENU,
-			"rotation Z          :             Z, X");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1060, MENU,
-			"to move map         :       1, 2, 3, 5");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1080, MENU,
-			"to change color     :                C");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1100, MENU,
-			"grow up/grow down   :              W/S");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1120, MENU,
-			"zoom ++             :                +");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1140, MENU,
-			"zoom --             :                -");
-	mlx_string_put(fdf->init, fdf->win, 1450, 1160, MENU,
-			"exit or close window:              ESC");
-}
-
 void	ft_init_colors(t_fdf *fdf)
 {
 	fdf->cord.colors[0] = 15865546;
@@ -59,36 +35,11 @@ void	ft_init_colors(t_fdf *fdf)
 	fdf->cord.colors[11] = 5250600;
 }
 
-int		deal_key(int key, t_fdf *fdf)
+void	ft_change_color(t_fdf *fdf)
 {
-	mlx_clear_window(fdf->init, fdf->win);
-	key == 82 || key == 29 ? show_menu(fdf) : 0;
-	key == 53 ? exit_fdf() : 0;
-	key == 36 ? initial_values(fdf) : 0;
-	key == 69 && fdf->cord.step <= 100 ? fdf->cord.step += 1 : 0;
-	key == 78 && fdf->cord.step >= 5 ? fdf->cord.step -= 1 : 0;
-	key == 124 ? fdf->mtrx = ft_rotate_x(fdf, 1) : 0;
-	key == 123 ? fdf->mtrx = ft_rotate_x(fdf, -1) : 0;
-	key == 125 ? fdf->mtrx = ft_rotate_y(fdf, 1) : 0;
-	key == 126 ? fdf->mtrx = ft_rotate_y(fdf, -1) : 0;
-	key == 6 ? fdf->mtrx = ft_rotate_z(fdf, 1) : 0;
-	key == 7 ? fdf->mtrx = ft_rotate_z(fdf, -1) : 0;
-	key == 13 && fdf->cord.z_s <= 40 ? fdf->cord.z_s += 1 : 0;
-	key == 1 && fdf->cord.z_s >= -40 ? fdf->cord.z_s -= 1 : 0;
-	if (key == 8)
-	{
-		fdf->cord.i >= 11 ? fdf->cord.i = 0 : 0;
-		fdf->cord.color = fdf->cord.colors[fdf->cord.i];
-		fdf->cord.else_color = fdf->cord.colors[fdf->cord.i++ + 1];
-		printf("color %d\n", fdf->cord.color);
-	}
-	(key == 18 || key == 83) && fdf->cord.x_s >= 1 ? fdf->cord.x_s -= 10 : 0;
-	(key == 23 || key == 87) && fdf->cord.y_s >= 1 ? fdf->cord.y_s -= 10 : 0;
-	(key == 19 || key == 84) && fdf->cord.y_s <= 1100 ? fdf->cord.y_s += 10 : 0;
-	(key == 20 || key == 85) && fdf->cord.x_s <= 1900 ? fdf->cord.x_s += 10 : 0;
-	ft_paint_fdf(fdf);
-//	system("leaks -q fdf");
-	return (0);
+	fdf->cord.i >= 11 ? fdf->cord.i = 0 : 0;
+	fdf->cord.color = fdf->cord.colors[fdf->cord.i];
+	fdf->cord.else_color = fdf->cord.colors[fdf->cord.i++ + 1];
 }
 
 int		main(int argc, char **argv)
@@ -102,7 +53,7 @@ int		main(int argc, char **argv)
 	{
 		if (ft_fdf(argv[1], fdf, 0) == 0)
 		{
-			system("leaks -q fdf > leaks.txt");
+			system("leaks -q fdf");
 			return (0);
 		}
 		fdf->init = mlx_init();
