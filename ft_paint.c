@@ -54,7 +54,7 @@ static	void	h_line(t_fdf *fdf, double x, double y, t_xy xy)
 {
 	int color;
 
-	color = fdf->map[xy.x][xy.y] > 0  && fdf->map[xy.x][xy.y + 1] > 0 ?\
+	color = fdf->map[xy.x][xy.y] && fdf->map[xy.x][xy.y + 1] ?\
 		fdf->cord.else_color : fdf->cord.color;
 	fdf->cord.x0 = fdf->cord.x_s + (y * fdf->cord.step);
 	fdf->cord.y0 = fdf->cord.y_s + (x * fdf->cord.step);

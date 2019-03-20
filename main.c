@@ -65,7 +65,7 @@ int		main(int argc, char **argv)
 		ft_paint_fdf(fdf);
 		ft_init_colors(fdf);
 		mlx_hook(fdf->win, 2, 0, deal_key, fdf);
-		mlx_hook(fdf->win, 17, 0, exit_fdf, NULL);
+//		mlx_hook(fdf->win, 17, 0, exit_fdf, NULL);
 		mlx_loop(fdf->init);
 	}
 	system("leaks -q fdf");
